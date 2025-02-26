@@ -1,0 +1,110 @@
+.notification {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 25px 15px 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: sans-serif;
+  overflow: hidden;
+  width: 280px;
+}
+
+.success {
+  background-color: #e7f0dc;
+  border-left: 5px solid #597445;
+  color: #597445;
+}
+
+.info {
+  background-color: #F2EFE7;
+  border-left: 5px solid #81BFDA;
+  color: #81BFDA;
+}
+.warning {
+  background-color: #EFDCAB;
+  border-left: 5px solid #D98324;
+  color: #D98324;
+}
+.error {
+  background-color: #F6DED8;
+  border-left: 5px solid #B82132;
+  color: #B82132;
+}
+
+/* progress bar styling */
+.notification .progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  animation: progressBar 3s linear forwards;
+}
+
+
+.notification.success .progress {
+  background-color: #597445; 
+}
+
+.notification.info .progress {
+  background-color: #81BFDA; 
+}
+
+.notification.warning .progress {
+  background-color: #D98324; 
+}
+
+.notification.error .progress {
+  background-color: #B82132; 
+}
+
+
+@keyframes progressBar {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+.closeBtn {
+  margin-left: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.closeBtn:hover {
+  transform: scale(1.1, 1.1);
+}
+
+
+
+.top-right {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.top-left {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.bottom-right {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.bottom-left {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+

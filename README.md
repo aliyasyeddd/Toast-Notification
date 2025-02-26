@@ -1,8 +1,1 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React Toast Notification SystemThis project is a React-based Toast Notification System that provides a user-friendly way to display success, info, error, and warning messages. The system supports customizable animations, durations, and dynamic content. Key Features :Custom Hook (useNotification): Manages the notification state efficiently.Four Notification Types: Supports success, info, error, and warning messages.Auto Dismiss Feature: Notifications automatically disappear after a set duration.Close Button: Users can manually close notifications.Dynamic Positioning: Supports positioning like top-left, bottom-right, etc.Animated Progress Bar: Visual feedback for notification duration.Reusable Component: Easily integrates into any React project.Memoized Icons: Optimized rendering performance.

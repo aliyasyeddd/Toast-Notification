@@ -1,20 +1,66 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: sans-serif;
+  align-items: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 100px;
+  width: 400px;
+  gap: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  background-color: white;
 }
 
+.btns > button {
+  cursor: pointer;
+  width: 180px;
+  height: 40px;
+  border-radius: 5px;
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+}
+
+.title {
+  font-family: "Open Sans", serif;
+  font-weight: 00;
+  font-style: normal;
+
+}
+
+
+.Success {
+ background-color: #D0E8C5;
+}
+
+.Info {
+  background-color: #C6E7FF;
+}
+
+.Error {
+ background-color: #FF8080;
+}
+
+
+.Warning {
+  background-color: #FFB38E;
+}
+
+button:hover .Success {
+  display: block;
+  filter: drop-shadow( 0 0 10px #D0E8C5);
+}
+
+button:hover  {
+  transform: scale(1.1, 1.1);
+}
