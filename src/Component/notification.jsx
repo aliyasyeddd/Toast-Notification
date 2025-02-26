@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+
 import { FiCheckCircle, FiInfo } from "react-icons/fi";
 import { BiCommentError } from "react-icons/bi";
 import { AiOutlineWarning } from "react-icons/ai";
@@ -15,6 +15,7 @@ import "./notification.css";
  * @returns {JSX.Element | null} - Returns the notification component if visible, otherwise null.
  */
 
+// eslint-disable-next-line react/prop-types
 function Notification({ type = "info", message = ""}) {
   // State to control visibility of the notification
   const [visible, setVisible] = useState(true);
