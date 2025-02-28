@@ -12,7 +12,7 @@ import "./App.css";
 function App() {
   // Destructure NotificationComponent and triggerNotification from the useNotification hook
   const { NotificationComponent, triggerNotification } =
-    useNotification("top-left");
+    useNotification();
 
   return (
     <div className="main">
